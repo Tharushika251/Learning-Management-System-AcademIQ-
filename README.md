@@ -89,9 +89,66 @@ npm run dev
 
 ## Dark Mode Screenshots
 
+# HomePage
 ![Dark Mode](assets/dark-home.png)
+# LeaderBoard
+![Dark Mode](assets/dark-leaderboard-highScore.png)
+# Quiz List
+![Dark Mode](assets/dark-quizList.png)
+
+## Teacher Dashboard
+
+# Profile
+![Dark Mode](assets/teacher/dark-profile.png)
+# Create Quiz
+![Dark Mode](assets/teacher/dark-createQuiz.png)
+# Edit and Delete Quiz and questions
+![Dark Mode](assets/teacher/dark-editQuiz.png)
+
+## Teacher Dashboard
+
+# Profile
+![Dark Mode](assets/student/dark-profile.png)
+# Start Quiz
+![Dark Mode](assets/student/dark-startQuiz.png)
+# Questions
+![Dark Mode](assets/student/dark-questions.png)
+# Result
+![Dark Mode](assets/student/dark-result.png)
+# Mistake Review
+![Dark Mode](assets/student/dark-mistakeReview.png)
+# Score History with graph comparison and Generate Report
+![Dark Mode](assets/student/dark-myScore.png)
 
 ## Light Mode Screenshots
 
+# HomePage
 ![Light Mode](assets/home.png)
+# LeaderBoard
+![Light Mode](assets/leaderboard-highScore.png)
+# Quiz List
+![Light Mode](assets/quizList.png)
 
+## Teacher Dashboard
+
+# Profile
+![Light Mode](assets/teacher/profile.png)
+# Create Quiz
+![Light Mode](assets/teacher/createQuiz.png)
+# Edit and Delete Quiz and questions
+![Light Mode](assets/teacher/editQuiz.png)
+
+## Teacher Dashboard
+
+# Profile
+![Light Mode](assets/student/profile.png)
+# Start Quiz
+![Light Mode](assets/student/startQuiz.png)
+# Questions
+![Light Mode](assets/student/png)
+# Result
+![Light Mode](assets/student/result.png)
+# Mistake Review
+![Light Mode](assets/student/mistakeReview.png)
+# Score History with graph comparison and Generate Report
+![Light Mode](assets/student/myScore.png)
