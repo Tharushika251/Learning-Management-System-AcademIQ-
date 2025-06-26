@@ -85,70 +85,70 @@ npm run dev
 
 ---------------------------------------------------------
 
-## Screenshots
+# Screenshots
 
-## Dark Mode Screenshots
+# Dark Mode Screenshots
 
-# HomePage
+## HomePage
 ![Dark Mode](assets/dark-home.png)
-# LeaderBoard
+## LeaderBoard
 ![Dark Mode](assets/dark-leaderboard-highScore.png)
-# Quiz List
+## Quiz List
 ![Dark Mode](assets/dark-quizList.png)
 
-## Teacher Dashboard
+# Teacher Dashboard
 
-# Profile
+## Profile
 ![Dark Mode](assets/teacher/dark-profile.png)
-# Create Quiz
+## Create Quiz
 ![Dark Mode](assets/teacher/dark-createQuiz.png)
-# Edit and Delete Quiz and questions
+## Edit and Delete Quiz and questions
 ![Dark Mode](assets/teacher/dark-editQuiz.png)
 
-## Teacher Dashboard
+# Student Dashboard
 
-# Profile
+## Profile
 ![Dark Mode](assets/student/dark-profile.png)
-# Start Quiz
+## Start Quiz
 ![Dark Mode](assets/student/dark-startQuiz.png)
-# Questions
+## Questions
 ![Dark Mode](assets/student/dark-questions.png)
-# Result
+## Result
 ![Dark Mode](assets/student/dark-result.png)
-# Mistake Review
+## Mistake Review
 ![Dark Mode](assets/student/dark-mistakeReview.png)
-# Score History with graph comparison and Generate Report
+## Score History with graph comparison and Generate Report
 ![Dark Mode](assets/student/dark-myScore.png)
 
-## Light Mode Screenshots
+# Light Mode Screenshots
 
-# HomePage
+## HomePage
 ![Light Mode](assets/home.png)
-# LeaderBoard
+## LeaderBoard
 ![Light Mode](assets/leaderboard-highScore.png)
-# Quiz List
+## Quiz List
 ![Light Mode](assets/quizList.png)
 
-## Teacher Dashboard
+# Teacher Dashboard
 
-# Profile
+## Profile
 ![Light Mode](assets/teacher/profile.png)
-# Create Quiz
+## Create Quiz
 ![Light Mode](assets/teacher/createQuiz.png)
-# Edit and Delete Quiz and questions
+## Edit and Delete Quiz and questions
 ![Light Mode](assets/teacher/editQuiz.png)
 
-## Teacher Dashboard
+# Student Dashboard
 
-# Profile
+## Profile
 ![Light Mode](assets/student/profile.png)
-# Start Quiz
+## Start Quiz
 ![Light Mode](assets/student/startQuiz.png)
-# Questions
-![Light Mode](assets/student/png)
-# Result
+## Questions
+![Light Mode](assets/student/questions.png)
+## Result
 ![Light Mode](assets/student/result.png)
-# Mistake Review
+## Mistake Review
 ![Light Mode](assets/student/mistakeReview.png)
-# Score History with graph comparison and Generate Report
+## Score History with graph comparison and Generate Report
 ![Light Mode](assets/student/myScore.png)
