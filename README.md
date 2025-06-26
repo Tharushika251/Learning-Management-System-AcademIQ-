@@ -89,9 +89,9 @@ npm run dev
 
 ## Dark Mode Screenshots
 
-![Dark Mode](Learning-Management-System-AcademIQ-/assets/dark-home.png)
+![Dark Mode](assets/dark-home.png)
 
 ## Light Mode Screenshots
 
-![Light Mode](Learning-Management-System-AcademIQ-/assets/home.png)
+![Light Mode](assets/home.png)
 
