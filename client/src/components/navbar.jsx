@@ -1,7 +1,8 @@
 import { useContext } from 'react';
 import { useAuth } from '../hooks/useAuth';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { ThemeContext } from '../contexts/ThemeContext';
+import { Home } from 'lucide-react';
 
 const NavBar = () => {
     const { currentUser, logout } = useAuth();
@@ -37,10 +38,7 @@ const NavBar = () => {
 
         return (
             <>
-                <a className={style} href="/profile">Profile</a>
-                {currentUser?.role === 'rider' && (
-                    <a className={style} href="/delivery">Delivery</a>
-                )}
+                <a className={style} href="/profile">Profile</a>                
                 <button onClick={signout} className={style}>Sign Out</button>
             </>
         );
@@ -48,7 +46,14 @@ const NavBar = () => {
 
     return (
         <div>
-            <nav className={`relative px-4 py-4 flex justify-between items-center ${darkMode ? 'bg-slate-800 text-white' : 'bg-white text-gray-800'} transition-colors duration-200`}>
+            <nav className={`relative p-6 flex justify-between items-center ${darkMode ? 'bg-slate-800 text-white' : 'bg-white text-gray-800'} transition-colors duration-200`}>
+                <Link
+                    to="/"
+                    className={iconButtonStyle}
+                    title="Home"
+                >
+                    <Home />
+                </Link>
                 <div className="flex items-center space-x-3 ml-4">                    
                     <h1 className="text-3xl font-extrabold text-primary-900 dark:text-white font-serif tracking-tight">
                         🎓Academ<span className="text-blue-600">IQ⏱️</span>

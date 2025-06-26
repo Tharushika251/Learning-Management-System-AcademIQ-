@@ -7,6 +7,7 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import NavBar from './components/navbar';
 // import Footer from './components/footer';
 import { AuthProvider  } from './hooks/useAuth'
+import Footer from './components/footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <NavBar />
         <App />
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
       </AuthProvider >
     </ThemeProvider>

@@ -1,76 +1,34 @@
-import '../assets/hero.jpg'
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { ThemeContext } from '../contexts/ThemeContext';
+import { useAuth } from '../hooks/useAuth';
 
 const Home = () => {
+    const { darkMode } = useContext(ThemeContext);
+    const { currentUser } = useAuth();
+
+    const getStartedLink = currentUser ? '/profile' : '/login';
 
     return (
-        <div >
-            <Nav />
-            <HeroSection />
-
+        <div className={`min-h-screen flex flex-col items-center justify-between bg-gradient-to-b ${darkMode ? 'from-gray-900 to-gray-700 text-white' : 'from-slate-100 to-slate-300 text-gray-900'}`}>
+            {/* Hero Section */}
+            <main className="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 py-20">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">Empower Learning Through Quizzes</h2>
+                <p className="max-w-2xl text-lg md:text-xl mb-8">
+                    An intuitive platform for students to take quizzes and for teachers to create and manage them.
+                </p>
+                <div className="space-x-4">
+                    <Link
+                        to={getStartedLink}
+                        className="bg-indigo-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition"
+                    >
+                        Get Started
+                    </Link>                    
+                    <Link to="/highScoreQuizList" className="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-100 dark:hover:bg-gray-800 transition">View Leaderboard</Link>
+                </div>
+            </main>
         </div>
     );
 };
-
-const HeroSection = () => {
-    return (
-        <div className="relative">
-            <section className="relative h-screen min-h-[600px] w-full overflow-hidden">            
-                <div className="absolute inset-0 w-full h-full">
-                    <div className="min-h-screen py-12 px-4">
-                        <div className="max-w-6xl mx-auto">
-                            <div className="rounded-xl shadow-2xl overflow-hidden mb-4">
-                                <div className="relative bg-gradient-to-r from-red-100 to-red-400 h-48">
-                                    <div className="absolute -bottom-16 left-8">
-                                        <div className="relative">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-2xl overflow-hidden mb-4">
-                                <div className="relative bg-gradient-to-r from-red-100 to-red-400 h-48">
-                                    <div className="absolute -bottom-16 left-8">
-                                        <div className="relative">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>             
-            </section>
-        </div>
-    );
-}
-
-const categories = [
-    { label: 'Start', emoji: '🚀' },
-    { label: 'Art', emoji: '🎨' },
-    { label: 'Entertainment', emoji: '🎬' },
-    { label: 'Geography', emoji: '🌍' },
-    { label: 'History', emoji: '📜' },
-    { label: 'Languages', emoji: '🗣️' },
-    { label: 'Science', emoji: '🔬' },
-    { label: 'Sports', emoji: '⚽' },
-    { label: 'Trivia', emoji: '❓' },
-];
-  
-const Nav = () => {
-    return (
-        <nav className="flex justify-around py-4 border-b dark:border-gray-200">
-            {categories.map(({ label, emoji }) => (
-                <div
-                    key={label}
-                    className="group flex flex-col items-center cursor-pointer transition-colors text-gray-700 dark:text-gray-300 hover:text-primary-900 dark:hover:text-primary-400"
-                >
-                    <span className="text-lg">{emoji} {label}</span>
-                    <span className="mt-2 h-[2px] w-10 bg-transparent group-hover:bg-primary-900 transition-all duration-300"></span>
-                </div>
-            ))}
-        </nav>
-
-    );
-}
 
 export default Home;

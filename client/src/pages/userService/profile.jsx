@@ -92,7 +92,7 @@ const Profile = () => {
             if (error) throw error;
 
             const { data: urlData } = supabase.storage
-                .from('foodie')
+                .from('academiIQ')
                 .getPublicUrl(filePath);
 
             const imageUrl = urlData.publicUrl;
@@ -135,7 +135,7 @@ const Profile = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-slate-100 to-slate-300 dark:from-gray-900 dark:to-gray-800 py-12 px-4">
+        <div className="min-h-screen bg-gradient-to-b from-slate-100 to-slate-300 dark:from-gray-900 dark:to-gray-800 p-4">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-10">
                     <h1 className="text-4xl font-extrabold text-gray-800 dark:text-white">My Profile</h1>
