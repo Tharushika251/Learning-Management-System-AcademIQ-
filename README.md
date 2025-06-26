@@ -83,3 +83,15 @@ cd frontend
 npm install
 npm run dev
 
+---------------------------------------------------------
+
+## Screenshots
+
+## Dark Mode Screenshots
+
+![Dark Mode](Learning-Management-System-AcademIQ-/assets/dark-home.png)
+
+## Light Mode Screenshots
+
+![Light Mode](Learning-Management-System-AcademIQ-/assets/home.png)
+
