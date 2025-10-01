@@ -52,8 +52,6 @@ const fetchApi = async (endpoint, options = {}) => {
     }
 };
 
-
-
 export const api = {
     // User
     login: (credentials) =>
@@ -83,6 +81,11 @@ export const api = {
         fetchApi(USER_SERVICE_API_URL + '/users/pic/' + user_id, {
             method: 'PUT',
             body: JSON.stringify(userData)
+        }),
+
+    getStudentById: (studentId) =>
+        fetchApi(USER_SERVICE_API_URL + '/users/' + studentId, {
+            method: 'GET'
         }),
 
     // getCurrentUser: (email) =>
