@@ -3,7 +3,7 @@
 
 # 🎓AcademIQ⏱️
 
-A full-featured role-based quiz management web application designed for both **teachers** and **students**. Teachers can create and manage quizzes, while students can take quizzes with real-time timer support, view their results instantly, and analyze their performance using graphs and tables.
+A full-featured role-based quiz management web application designed for both **teachers** and **students**. Teachers can create and manage quizzes, while students can take quizzes with real-time timer support, view their results instantly, review the mistakes and analyze their performance using graphs and tables.
 
 ---
 
